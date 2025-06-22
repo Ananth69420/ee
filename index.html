@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Disha baby</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*I love you so fucking much I cant</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hey baby, boo boo, darling, honey, bunny, my loml (and I'm your loyl)(Also, not Keerthana so u better pick her a new nickname ), shona baby (idc if it's cringe)!<br /><br />			Do you remember the day we first met?<br />
+			<span class="comments">// Outside of our class when u approached me(idc if this is cringe for) </span><br />
+			Since that day a spark begun;<br />
+			<span class="comments">// Your face, your Voice, your Words, your fucking cuteness..</span><br />
+			You're everything got imprinted in my heart;<br />
+			As the time went on;<br />
+			The Bond grew stronger and stronger and the weaker cuz shit happened and ukw it was and then it grew way stronger;<br />
+			Journey from Infatuation(i saw this word in a reel) to Love;<br />
+			We have traveled a long way together;<br />
+			We had our downs (fights) ;<br />
+			<span class="comments">// And I'm sure there will be more.</span><br />
+			We had more ups than downs and our bond will ofc grown more<br />
+			<br>
+			<br>
+			All I want to say is<br />
+			Baby I love you more than words can say, more than there are hours in time.<br />
+			7th may the day we confessed to each other, the night i was the happiest.<br />
+			ahhh, fucking baby uk how much i happy i was(ew) wtv <br />
+			anyways, yeah talking about when i started loving you <br />
+			it was when we started talking all day, like nonstop<br />
+			the way u got mad when i didn’t say good morning(we didnt wish each other gm today) properly or good night properly or when my tone was just a bit off<br />
+			u’d full go silent and i'd be like i messed up again didnt i<br />
+			and ur eyes?? wtf baby ur eyes r like some sort of black hole they just suck me in and i don’t even wanna escape<br />
+			and today when u cried at every small thing ahhh i wanted to hold u so tight and tell u it’s okay like 500 times<br />
+			i hate when u cry but also love that ur so soft and emotional like that’s so pure and real fr<br />
+			and your lips??? like wtf how do u even look that good when ur annoyed or mad it makes me wanna kissu and shut u up<br />
+			ur cuteness is fucking illegal istg, like why are u this cute AND this annoying at the same time<br />
+			and when u (used to) send me voice notes with that lil pouty voice i just die then come back to die again<br />
+			baby idc how much u scream or cry or fight i still wanna stay<br />
+			cuz u make me feel like home, even when ur being mean<br />
+			even when u roast me 24/7 or act like a baby at 12am<br />
+			i still choose u. every time. always. 
+			<br>
+			<br>
+			Now If you want to hug me you can touch the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a href="text-to-image.jpeg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Freaking forever
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- Ananth</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2025, 4, 7);
+together.setHours(23);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
